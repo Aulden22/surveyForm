@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>surveyForm</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+
+    <head>
+        <!--For the freecodecamp.com project-->
+        <!--No metadata given-->
+    </head>
+    <body>
+        <h1 id="title" class="heading">Social Life Survey</h1>
+        
+        <div id="form-outer">
+
+        <p id="description">This is a survey collecting data on individuals' social lives. This project is meant to gain insight into
+            the differences of social lives of people based on age and regional assets.
+        </p>
+        <form id="survey-form">
+            <div class="rowTab">
+                <div class="labels">
+                    <label id="name-label" for="name">* Name: </label>
+                    <div class="rightTab">
+                        <input autofocus type="text" for="name" id="name" class="input-field" placeholder="Your name here" required>
+                    </div>
+                </div>
+            </div>
+
+            <div class="rowTab">
+                <div id="labels">
+                    <label id="email-label" for="email">* Email: </label>
+                    <div class="rightTab">
+                        <input autofocus type="email" name="email" id="email" class="input-field" placeholder="Your email here" required>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="rowTab">
+                <div class="labels">
+                    <label id="number-label" for="population">* Local population: </label>
+                    <div class="rightTab">
+                        <input type="number" name="population" id="number" min="1" max="9000000" class="input-field" placeholder="Population here" required>
+                    </div>
+                </div>
+            </div>
+
+            <div class="rowTab">
+                <div class="labels">
+                    <label for="ageDemographic">Which age group do you fit in? </label>
+                    <div class="rightTab">
+                        <select id="dropdown" name="ageDemographic" class="dropdown">
+                            <option value="demo0">Under 12</option>
+                            <option value="demo1">12-17</option>
+                            <option value="demo2">18-24</option>
+                            <option value="demo3">25-34</option>
+                            <option value="demo4">35-44</option>
+                            <option value="demo5">45-54</option>
+                            <option value="demo6">55-64</option>
+                            <option value="demo7">65-74</option>
+                            <option value="demo8">75 or older</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="rowTab">
+                <div class="labels">
+                    <label for="activities">Activities I have participated in<br>this last year (Check all that apply): </label>
+                    <div class="rightTab multi-choice">
+                        <ul id="activities" style="list-style: none;"></ul>
+                            <li class="checkbox"><label><input name="userActivity" value="1" type="checkbox" class="actType">Movie Theatre</label></li>
+                            <li class="checkbox"><label><input name="userActivity" value="2" type="checkbox" class="actType">Bowling Alley</label></li>
+                            <li class="checkbox"><label><input name="userActivity" value="3" type="checkbox" class="actType">Swimming Pool</label></li>
+                            <li class="checkbox"><label><input name="userActivity" value="4" type="checkbox" class="actType">Golf Course</label></li>
+                            <li class="checkbox"><label><input name="userActivity" value="5" type="checkbox" class="actType">Gym</label></li>
+                            <li class="checkbox"><label><input name="userActivity" value="6" type="checkbox" class="actType">other</label></li>
+                    </div>
+                </div>
+            </div>
+
+            <div class="rowTab">
+                <div class="labels">
+                    <label for="other">If you selected other, please, write in the field provided.</label>
+                    <div class="rightTab">
+                        <textarea name="otherActivity" id="other" cols="50" rows="8" placeholder="Your other activities here."></textarea>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="rowTab">
+                    <div id="labels">
+                        <label for="infoRelease">Do you give consent for us to publish the provided information?</label>
+                        <div class="rightTab consent">
+                            <ul style="list-style: none;">
+                                <li class="radio"><label><input name="radio-buttons" value="1" type="radio" class="infoRelease">I consent</label></li>
+                                <li class="radio"><label><input name="radio-buttons" value="2" type="radio" class="infoRelease">Consent but remain anonymous</label></li>
+                                <li class="radio"><label><input name="radio-buttons" value="3" type="radio" class="infoRelease">I do not consent</label></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+    
+
+            <button id="submit" class="submit-border" type="submit">Submit</button>
+            </div>
+        </form>
+    </body>
+</html>
+<!-- partial -->
+  <script src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js'></script>
+</body>
+</html>
